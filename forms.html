@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro da liga dos astronautas</title>
+</head>
+<body>
+    <h3>Cadastro da liga dos astronautas</h3>
+    <form action="">
+        <!-- input do tipo texto -->
+        <div>
+            <label for="fname"> Nome:</label>
+            <input type="text" id="fname" name="fname">
+        </div>
+        <br>
+
+        <!-- input do tipo email -->
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <!-- input do tipo password -->
+            <label for="pwd">- Password:</label>
+            <input type="password" id="pwd" name="pwd">
+        </div>
+        <br>
+
+        <!-- input do tipo data -->
+        <div>
+            <label for="birthday"> Data de nascimento:</label>
+            <input type="date" id="birthday" name="birthday">
+            <!-- input de buscar um arquivo -->
+            <label for="photo">- Foto:</label>
+            <input type="file" id="photo" name="photo">
+        </div>
+        <br>
+
+        <!-- input do tipo "ÄUTO DATA" onde voce seleciona uma opcao-->
+        <div>
+            <label for="nacionalidade"> Nacionalidade: </label>
+            <select name="nacionalidade" id="nacionalidade">
+                <option value="Asiatico"> Asiatico</option>
+                <option value="brasileiro"> Brasileiro</option>
+                <option value="Americano"> Americano</option>
+                <option value="Africano"> Africano</option>
+            </select>
+            
+            Genero:
+            <!-- Input do tipo Genero, selecione apenas uma das opcoes -->
+            <label for="Male"> - M </label>
+            <input type="radio" id="gender" name="male" value="male" />
+            <label for="female"> F </label>
+            <input type="radio" name="gender" id="female" value="female" />
+        </div>
+        <br>
+        
+        <div>
+            Suas principais qualidades:
+            <br>
+            <br>
+            <!-- input do tipo checkbox que seleciona uma ou todas alternativas -->
+            <input type="checkbox" id="int" name="int" value="Bike">
+            <label for="int"> Inteligencia /</label>
+            <input type="checkbox" id="Res" name="Res" value="Car">
+            <label for="Res"> Resiliencia /</label>
+            <input type="checkbox" id="physic" name="physic" value="Boat">
+            <label for="physic"> Preparo Fisico /</label>
+            <input type="checkbox" id="Edu " name="Edu " value="Bike">
+            <label for="Edu "> Educacao /</label>
+        </div>
+        <br>
+        
+        <div>
+            <!-- area pra colocar algum comentario, "place holder" é o exemplo em transparente pro usuario -->
+            <textarea name="description" id="description" cols="40" rows="10" placeholder="Porque voce gostaria de ser um astronauta?" maxlength="500"></textarea>
+        </div>
+        <br>
+        <!-- area pra colocar algum comentario, "place holder" é o exemplo em transparente pro usuario -->
+        
+        <div>
+            <!-- input de criar o botao pra enviar pro backend as informacoes -->
+            <input type="submit" value="Criar">
+        </div>
+        
+        
+     </form>
+</body>
+</html>
